@@ -10,7 +10,11 @@ class Just < Formula
 
 
   def install
-  	system "mvn", "org.apache.maven.plugins:maven-install-plugin:3.0.1:install-file", "-Dfile=fly-devcontainers.jar"
+  	# for whatever reason this does not work:
+  	# system "mvn", "org.apache.maven.plugins:maven-install-plugin:3.0.1:install-file", "-Dfile=fly-devcontainers.jar"
+  	cmd = "mvn org.apache.maven.plugins:maven-install-plugin:3.0.1:install-file -Dfile=fly-devcontainers.jar"
+  	value = `#{cmd}`
+  	print value
     bin.install "just"
   end
 
