@@ -6,6 +6,8 @@ class Just < Formula
   sha256 "3ede2cade395166917d0d3b1651b65203c85a41444904b145ac5863c8d720f52"
   license "Not OSS"
 
+  depends_on "maven"
+
 
   def install
   	cmd = "mvn org.apache.maven.plugins:maven-install-plugin:3.0.1:install-file -Dfile=fly-devcontainers.jar"
