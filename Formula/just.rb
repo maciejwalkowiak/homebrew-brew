@@ -1,3 +1,5 @@
+require "formula"
+
 class Just < Formula
   desc "Command Line Spring Boot runner"
   homepage "https://github.com/maciejwalkowiak/just"
