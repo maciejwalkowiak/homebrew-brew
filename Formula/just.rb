@@ -10,9 +10,7 @@ class Just < Formula
 
 
   def install
-  	cmd = "mvn org.apache.maven.plugins:maven-install-plugin:3.0.1:install-file -Dfile=fly-devcontainers.jar"
-  	value = `#{cmd}`
-  	print value
+  	system "mvn", "org.apache.maven.plugins:maven-install-plugin:3.0.1:install-file", "-Dfile=fly-devcontainers.jar"
     bin.install "just"
   end
 
