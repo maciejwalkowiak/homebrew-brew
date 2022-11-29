@@ -8,7 +8,7 @@ class Just < Formula
 
 
   def install
-    system "mvn org.apache.maven.plugins:maven-install-plugin:3.0.1:install-file -Dfile=fly-devcontainers.jar"
+    system "mvn", "org.apache.maven.plugins:maven-install-plugin:3.0.1:install-file", "-Dfile=fly-devcontainers.jar"
     bin.install "just"
   end
 
