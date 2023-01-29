@@ -1,9 +1,9 @@
 class Just < Formula
   desc "Command Line Spring Boot runner"
   homepage "https://github.com/maciejwalkowiak/just"
-  url "https://github.com/maciejwalkowiak/just/releases/download/0.12.0/just-0.12.0-osx-x86_64.zip"
-  version "0.12.0"
-  sha256 "ef2407214906322af5405bddd600730e03d10a165706b5c85b6b207c938eae49"
+  url "https://github.com/maciejwalkowiak/just/releases/download/0.13.0/just-0.13.0-osx-x86_64.zip"
+  version "0.13.0"
+  sha256 "1f3761d4140a45b436106cbcec2ae85d7a6cc3f9f0f3b681e2c6e8111c01175d"
   license "Apache License, Version 2.0"
 
 
